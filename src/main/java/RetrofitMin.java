@@ -42,39 +42,6 @@ public class RetrofitMin {
 					
 				}
         });
-
-		/*OkHttpClient client=new OkHttpClient();
-		Request req=new Request.Builder()
-				.url("https://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=2d4c222e7204d579867b4068c0094d67")
-				.build();
-		Call call= client.newCall(req);
-		call.enqueue(new Callback() {
-
-			@Override
-			public void onFailure(Call call, IOException e) {
-				// TODO Auto-generated method stub
-				
-			}
-
-			@Override
-			public void onResponse(Call call, Response response) throws IOException {
-				try {
-					JSONObject obj=new JSONObject(response.body().string());
-					Iterator iter=obj.keys();
-					iter.forEachRemaining((s)->{
-						try {
-							System.out.println(s+" : "+obj.getString((String) s));
-						} catch (JSONException e) {
-							// TODO Auto-generated catch block
-							e.printStackTrace();
-						}
-					});
-				} catch (JSONException e) {
-					e.printStackTrace();
-				}
-			}
-			
-		});*/
 	}
 
 }
